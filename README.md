@@ -23,7 +23,7 @@ This projects outlines the prerequisites and installation process of the open-so
 - Log into Remote Desktop and unzip osTicket-Installation-Files.zip
 - Install/enable IIS and other files within osTicket-Installation-Files.zip
 - Install osTicket file, then enable certain extensions on the ticketing system 
-- Assign permissions and setup HeidiSQL(finish setting up osTicket)
+- Assign permissions and finish setting up osTicket
 
 <h2>Installation Steps</h2>
 
@@ -67,14 +67,15 @@ When registering the PHP Manager, we have to move it to the C:\PHP\php-cgi.exe f
 
 <h4>Install osTicket file, then enable certain extensions on the ticketing system:</h4>
 <p>
-<img src="https://i.imgur.com/5McRDGC.jpeg" height="60%" width="60%" alt="Enabling extensions"/> <img src="https://i.imgur.com/JOrpDl1.png" height="60%" width="60%" alt="continuing help desk"/>
+<img src="https://i.imgur.com/5McRDGC.jpeg" height="60%" width="60%" alt="Enabling extensions"/> 
 </p>
 <p>
 For the installation for osTicket, we need to enbale a couple of extensions. Go back to IIS, sites, Default, osTicket. We want to double click PHP manger and click enable or disable an extension. The Three extensions we are going to enable are  php_imap.dll, php_intl.dll, and php_opcache.dll. Refresh the osTicket site in your browser, observe the changes. Now we need to rename the  ost-config.php by going to the C:\inetpub\wwwroot\osTicket\include\ost-sampleconfig.php renaming it to ost-config.php. Right click on ost-config.php, go to properties the advanced. 
 <br />
 
-<h4>Assign permissions and setup HeidiSQL(finish setting up osTicket):</h4>
+<h4>Assign permissions and finish setting up osTicket:</h4>
 <p>
+  <img src="https://i.imgur.com/JOrpDl1.png" height="60%" width="60%" alt="continuing help desk"/>
   <img src="https://i.imgur.com/5ktEQ1S.png" height="60%" width="60%" alt="Enabling extensions"/>
 </p>
 <p>
